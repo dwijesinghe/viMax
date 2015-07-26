@@ -1,12 +1,12 @@
-# viMinder
+# viMax
 
-This plugin was designed to allow Vim users the ability to schedule reminders quickly from within Vim. The plugin wraps around the Windows schtasks utility so it is currently Windows only. If you know of similar utilities on Mac or Linux machines feel free to send me a feature request/contribute.
+Vim plugin for enabling the + and - keys to change font size (similar to Google Chrome but without using the Ctrl key). Hopefully this will ease the strain on your eyes, fellow Vimmers 8)
 
 #Installation
 
-## Install using Pathogen 
+## Install using Pathogen (if you already have Pathogen installed, skip to step 4)
 
-viMinder is packaged to be easily downloadable/updateable via the Pathogen plugin.
+viMax is packaged to be easily downloadable/updateable via the Pathogen plugin.
 
 1. Install [pathogen.vim] into `~/.vim/autoload/` (see [pathogen's
    readme][install-pathogen] for more information.)
@@ -24,46 +24,24 @@ viMinder is packaged to be easily downloadable/updateable via the Pathogen plugi
 
         mkdir ~/vimfiles/bundle
 
-4. Clone the `viMinder` repo into `~/vimfiles/bundle/`:
+4. Clone the `viMax` repo into `~/vimfiles/bundle/`:
 
-        git clone https://github.com/dwijesinghe/viMinder.git ~/vimfiles/bundle/viMinder/
+        git clone https://github.com/dwijesinghe/viMax.git ~/vimfiles/bundle/viMax/
 
 To Update:
-Run git pull from within ~/vimfiles/bundle/viMinder/
+Run git pull from within ~/vimfiles/bundle/viMax/
 
 ## Install using Zip file
 
 The plugin can also be installed by downloading the zip file and copying the vim file to your user directory. You can then enable the plugin on startup by adding the following line to your .vimrc file:
  
  ```vim
- :source ~/viMinder.vim
+ :source ~/viMax.vim
  ```
 
 #Usage
 
-1. The first time you run Vim after installing viMinder, enter the following command. 
-
- ```vim
- :call SetupViminder()
- ```
-
- This will setup the folder where your viMinder files will be stored called ViMinders (creative, I know). Avoid modifying or deleting this folder as it may cause viMinder to stop working properly. The folder will be located within your ~ directory.
-
-2. When you want to schedule a reminder for yourself, simply use ```\r``` to open a New Viminder panel. This will appear as a blank panel below your current buffer.
-
-3. Navigate to the bottom panel. Go into insert mode.
-
-4. Enter the text you want to remind yourself with, the date (MM/DD/YYYY) and the time you wish to be reminded (HH:MM 24 hr time) each separated by tabs. 
-
-For example if I wanted a reminder to buy orange juice on the way home at 5:00 PM on February 21, 2015 I would enter the following
-
- ```
-Buy orange juice  02/21/2015  17:00  
-```
-
-5. Exit insert mode. Press enter to save your new viMinder!
-
-A command line prompt will notify you if your viMinder was saved successfully. If you receive any error messages, review the documentation for schtasks and try again. If you find a bug, please let me know. 
+Once installed, the + and - keys should increase/decrease your font size when in command mode in Vim. Font size is changed in increments of 1. Please not that not all fonts in Vim support all sizes (using this plugin with the Fixedsys font will be somewhat disappointing). In addition, since many people forget to press Shift when they want the + key and often get the = key instead, I have mapped the = key to increase your font size as well.
 
 ##Contributing
 I welcome collaboration. Please maintain the general style of code and always feel free to poke me for additional information.
