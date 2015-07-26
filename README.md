@@ -6,7 +6,7 @@ Hopefully this will ease the strain on your eyes, fellow Vimmers 8)
 
 #Installation
 
-## Install using Pathogen (if you already have Pathogen installed, skip to step 4)
+## Install using Pathogen (Skip to step 4 if you already have Pathogen)
 
 viMax is packaged to be easily downloadable/updateable via the Pathogen plugin.
 
