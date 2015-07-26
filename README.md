@@ -1,6 +1,8 @@
 # viMax
 
-Vim plugin for enabling the + and - keys to change font size (similar to Google Chrome but without using the Ctrl key). Hopefully this will ease the strain on your eyes, fellow Vimmers 8)
+Vim plugin for enabling the + and - keys to change font size (similar to Google Chrome but without using the Ctrl key). 
+
+Hopefully this will ease the strain on your eyes, fellow Vimmers 8)
 
 #Installation
 
