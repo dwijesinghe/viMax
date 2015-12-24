@@ -26,7 +26,3 @@ endfunction
 
 :map - :call ChangeFont(-1)<cr><cr>
 :map + :call ChangeFont(1)<cr><cr>
-"Alot of people forget to press Shift when they want the plus key. 
-"To make their lives easier I'll enable the = key to do the same 
-"thing. But know that I am judging you >.<
-:map = :call ChangeFont(1)<cr><cr>
